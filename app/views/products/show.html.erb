@@ -1,5 +1,6 @@
 <%= simple_format h(@product.description) %>
 
+<%= image_tag @product.photo.url(:medium) %>
 <p>
   <strong>Price:</strong>
   <%= number_to_currency @product.price %>
